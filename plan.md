@@ -1,5 +1,4 @@
-# CAPMeme Project — Complete Explanation for Mentor
-
+# CAPMeme Project — 
 This document explains the **entire project**: what it does, which dataset and ground truth we use, which models we have, how they are trained and evaluated, and how to run everything.
 
 ---
