@@ -1,6 +1,5 @@
-# CAPMeme: Research Plan for Top-Tier NLP / Multimodal Journal
+# CAPMeme: Research Plan for 
 
-**Document purpose:** Complete roadmap to take the current CAPMeme (Contrastive Affect Modelling Meme) work to publication in a world-leading NLP or multimodal venue (e.g., ACL, EMNLP, NAACL, COLING, IEEE TACL, Computational Linguistics, or ACM MM / IEEE TMM).
 
 **Prepared from:** Full scan of `Memes_work` folder, `project.md`, `EMOFF_MEME.csv`, and `my_meme_data/my_meme_data` images.
 
@@ -132,38 +131,8 @@ Implement and compare against these; use **same data splits and seeds** for all.
 
 ---
 
-## 6. Paper Structure (Classic NLP / Multimodal Format)
-
-1. **Title / Abstract** — Multimodal sarcasm detection for Hindi memes via contrastive affect modelling and optional knowledge graphs.  
-2. **Introduction** — Motivation (memes, Hindi, sarcasm, affective incongruity), contribution bullets (CAP, emotion supervision, KG, first Hindi meme sarcasm with this design).  
-3. **Related Work** — Sarcasm detection (text, multimodal); affect/emotion in NLP; vision–language models; knowledge graphs in NLP; low-resource/Hindi NLP.  
-4. **Task and Dataset** — EMOFF_MEME description, statistics, splits, emotion schema, (optional) cross-dataset.  
-5. **Method** — CAPMeme: encoders (CLIP, IndicBERT), CAP (A_v, A_t, F_contrast, emotion supervision), KG (ConceptNet + fallback), fusion, loss.  
-6. **Experiments** — Setup (hardware, hyperparameters), baselines, main results table, ablations, analysis, qualitative examples.  
-7. **Discussion** — Limitations (Hindi-only, single dataset, ConceptNet coverage), societal impact, future work.  
-8. **Conclusion** — Summary and contributions.  
-9. **References / Appendix** — Full hyperparameters, more examples, extended tables.
-
 ---
 
-## 7. Suggested Timeline (High Level)
-
-| Phase | Tasks |
-|-------|--------|
-| **Data** | Fix 30 missing images or drop rows; stratified train/val/test; normalize emotions; document. |
-| **Baselines** | Implement text-only, image-only, late fusion, concat (no CAP); run ≥3 seeds each. |
-| **CAPMeme** | Run full model w/ and w/o KG; ablations (emotion loss, KG dim, fusion). |
-| **SOTA (optional)** | Add 1–2 VLMs or larger encoders; zero-shot VLM if applicable. |
-| **Analysis** | Error analysis, emotion correlation, qualitative examples, KG analysis. |
-| **Writing** | Draft → internal review → target venue (e.g., ACL/EMNLP rolling or next main deadline). |
-
----
-
-## 8. Summary: Minimum Set of Models for the Paper
-
-- **Proposed:** CAPMeme (with KG), CAPMeme (without KG).  
-- **Ablations:** CAPMeme without emotion loss; CAPMeme with F_contrast replaced by concat(E_v, E_t).  
-- **Baselines:** IndicBERT-only, CLIP-only, Late fusion (concat E_v + E_t), IndicBERT+CLIP concat (no CAP, no emotion).  
 - **Optional but recommended:** One multilingual BERT variant; one larger CLIP or one VLM (e.g., zero-shot) for "SOTA" comparison.
 
 This plan positions your work for a **world-top NLP or multimodal journal/conference** with a clear contribution (contrastive affect + hierarchical emotion supervision + optional KG for Hindi meme sarcasm), reproducible setup, and strong comparative and ablation experiments.
