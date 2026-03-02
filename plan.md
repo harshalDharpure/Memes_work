@@ -28,14 +28,6 @@
 
 ---
 
-## 2. Target Venues (World-Top NLP / Multimodal)
-
-- **NLP:** ACL, EMNLP, NAACL, COLING, EACL; **TACL**, **Computational Linguistics** (journal).
-- **Multimodal / affect:** ACM MM, IEEE ICME; **IEEE TAC**, **IEEE TMM**, **IEEE TNNLS** (journals).
-- **Sentiment / sarcasm / low-resource:** SemEval workshops, WASSA, or dedicated special issues.
-
-**Positioning:** First **hierarchically emotion-supervised, contrastive affect** model for **Hindi meme sarcasm** with optional **knowledge-graph** (ConceptNet) integration, targeting **affective incongruity** as the key signal — novel and publication-ready with strong baselines and ablations.
-
 ---
 
 ## 3. Data Preparation (Must Do Before Experiments)
